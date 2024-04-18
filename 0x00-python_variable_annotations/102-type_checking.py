@@ -2,14 +2,16 @@
 """
     This module contains a function that zooms an array.
 """
-
-
 from typing import List, Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """
+    This function takes a tuple of integers and returns a list of integers
+    that is the original list zoomed by the factor.
+    """
     zoomed_in: List = [
-        item for item in lst 
+        item for item in lst
         for i in range(factor)
     ]
     return zoomed_in
